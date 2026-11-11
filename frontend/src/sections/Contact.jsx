@@ -5,7 +5,7 @@ import Section from "../components/Section";
 import Toast from "../components/Toast";
 import { profile } from "../data/content";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL || "https://mern-stack-portfolio-dvxy.onrender.com";
 const empty = { name: "", email: "", subject: "", message: "" };
 
 export default function Contact() {
