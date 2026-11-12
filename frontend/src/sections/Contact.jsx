@@ -66,6 +66,7 @@ export default function Contact() {
           <a href={`mailto:${profile.email}`} className="flex items-center gap-3 hover:text-white"><Mail className="text-accent" /> {profile.email}</a>
           <a href={profile.github} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-white"><Github className="text-accent" /> GitHub</a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-white"><Linkedin className="text-accent" /> LinkedIn</a>
+        <a href="phone:+91 7987919073" rel="noreferrer" className="flex items-center gap-3 hover:text-white"><Phone className="text-accent" /><span>+91 7987919073</span></a>
         </div>
         
       </div>
