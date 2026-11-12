@@ -1,9 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-import { Github, Linkedin, Loader2, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Loader2, Mail, Send, Phone  } from "lucide-react";
 import Section from "../components/Section";
 import Toast from "../components/Toast";
 import { profile } from "../data/content";
+
 
 const API = import.meta.env.VITE_API_URL || "https://mern-stack-portfolio-dvxy.onrender.com";
 const empty = { name: "", email: "", subject: "", message: "" };
