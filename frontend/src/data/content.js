@@ -6,6 +6,8 @@ export const profile = {
   github: "https://github.com/ujjwalkaithwas8-hash",
   linkedin: "https://www.linkedin.com/in/ujjwal-kaithwas-44a74440b/",
   location: "Indore, India",
+  phone: "91+7987919073",
+
 };
 
 export const navLinks = ["About", "Skills", "Projects", "Journey", "Services", "Contact"];
