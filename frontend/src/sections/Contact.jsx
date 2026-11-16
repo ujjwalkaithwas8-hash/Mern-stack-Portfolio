@@ -71,6 +71,7 @@ export default function Contact() {
         </div>
       
       </div>
+      <Toast toast={toast} />
      
     </Section>
   );
