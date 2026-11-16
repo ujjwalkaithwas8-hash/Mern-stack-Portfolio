@@ -87,7 +87,7 @@ export default function Contact() {
         </motion.form>
         </div>
       </div>
-      <Toast toast={toast} />
+     
     </Section>
   );
 }
