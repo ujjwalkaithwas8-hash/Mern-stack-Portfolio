@@ -69,23 +69,7 @@ export default function Contact() {
           <a href={profile.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-white"><Linkedin className="text-accent" /> LinkedIn</a>
 <a href={`tel:+91${profile.phone}`}className="flex items-center gap-3 hover:text-white"><Phone className="text-accent" />{profile.phone}</a>
         </div>
-        <div>
-          <motion.form onSubmit={onSubmit} noValidate initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass space-y-5 p-7">
-          <div className="grid gap-5 sm:grid-cols-2">
-            {field('name', 'Name', { ph: 'Your name' })}
-            {field('email', 'Email', { type: 'email', ph: 'you@example.com' })}
-          </div>
-          {field('subject', 'Subject', { ph: 'What is this about?' })}
-          {field('message', 'Message', { area: true, ph: 'Tell me about your project or role…' })}
-
-          <button type="submit" disabled={status.type === 'loading'} className="btn-primary w-full sm:w-auto">
-            {status.type === 'loading' ? <><Loader2 size={18} className="animate-spin" /> Sending…</> : <><Send size={18} /> Send message</>}
-          </button>
-
-          {status.type === 'success' && <p role="status" className="flex items-center gap-2 text-green-400"><CheckCircle2 size={18} /> {status.text}</p>}
-          {status.type === 'error' && <p role="alert" className="flex items-center gap-2 text-red-400"><AlertCircle size={18} /> {status.text}</p>}
-        </motion.form>
-        </div>
+      
       </div>
      
     </Section>
